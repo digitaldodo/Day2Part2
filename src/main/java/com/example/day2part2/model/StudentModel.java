@@ -1,17 +1,21 @@
 package com.example.day2part2.model;
 
 public class StudentModel {
-    private int Id;
+    private int id;
     private String name;
-    private int email;
+    private String email;
     public StudentModel() {}
-
+    public StudentModel(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
@@ -22,11 +26,11 @@ public class StudentModel {
         this.name = name;
     }
 
-    public int getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(int email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 }
